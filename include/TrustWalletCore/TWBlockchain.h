@@ -44,7 +44,7 @@ enum TWBlockchain {
     TWBlockchainCardano = 30,
     TWBlockchainNEO = 31,
     TWBlockchainFilecoin = 32,
-    TWBlockchainElrondNetwork = 33,
+    TWBlockchainMultiversX = 33,
     TWBlockchainOasisNetwork = 34,
     TWBlockchainDecred = 35, // Bitcoin
     TWBlockchainZcash = 36, // Bitcoin
@@ -56,6 +56,8 @@ enum TWBlockchain {
     TWBlockchainEverscale = 42,
     TWBlockchainAptos = 43, // Aptos
     TWBlockchainHedera = 44, // Hedera
+    TWBlockchainTheOpenNetwork = 45,
+    TWBlockchainSui = 46,
 };
 
 TW_EXTERN_C_END

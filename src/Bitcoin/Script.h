@@ -20,6 +20,9 @@ namespace TW::Bitcoin {
 
 class Script {
   public:
+    // Maximum length for OP_RETURN data
+    static const size_t MaxOpReturnLength = 80;
+
     /// Script raw bytes.
     Data bytes;
 

@@ -21,6 +21,9 @@ TW_EXTERN_C_BEGIN
 /// Represents a private key.
 struct TWPrivateKey;
 
+/// Represents a public key.
+struct TWPublicKey;
+
 /// Coin type for Level 2 of BIP44.
 ///
 /// \see https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -40,6 +43,7 @@ enum TWCoinType {
     TWCoinTypeDigiByte = 20,
     TWCoinTypeDogecoin = 3,
     TWCoinTypeEOS = 194,
+    TWCoinTypeWAX = 14001,
     TWCoinTypeEthereum = 60,
     TWCoinTypeEthereumClassic = 61,
     TWCoinTypeFIO = 235,
@@ -64,7 +68,7 @@ enum TWCoinType {
     TWCoinTypeStellar = 148,
     TWCoinTypeTezos = 1729,
     TWCoinTypeTheta = 500,
-    TWCoinTypeThunderToken = 1001,
+    TWCoinTypeThunderCore = 1001,
     TWCoinTypeNEO = 888,
     TWCoinTypeTomoChain = 889,
     TWCoinTypeTron = 195,
@@ -84,7 +88,7 @@ enum TWCoinType {
     TWCoinTypeKusama = 434,
     TWCoinTypePolkadot = 354,
     TWCoinTypeFilecoin = 461,
-    TWCoinTypeElrond = 508,
+    TWCoinTypeMultiversX = 508,
     TWCoinTypeBandChain = 494,
     TWCoinTypeSmartChainLegacy = 10000714,
     TWCoinTypeSmartChain = 20000714,
@@ -122,6 +126,12 @@ enum TWCoinType {
     TWCoinTypeEverscale = 396,
     TWCoinTypeAptos = 637,
     TWCoinTypeHedera = 3030,
+    TWCoinTypeSecret = 529,
+    TWCoinTypeNativeInjective = 10000060,
+    TWCoinTypeAgoric = 564,
+    TWCoinTypeTON = 607,
+    TWCoinTypeSui = 784,
+    TWCoinTypePolygonzkEVM = 10001422,
 };
 
 /// Returns the blockchain for a coin type.

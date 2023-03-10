@@ -20,13 +20,8 @@ bool Entry::validateAddress([[maybe_unused]] TWCoinType coin, const std::string&
     return Address::isValid(address);
 }
 
-string Entry::deriveAddress([[maybe_unused]] TWCoinType coin, const PublicKey& publicKey, TW::byte, const char*) const {
+string Entry::deriveAddress([[maybe_unused]] TWCoinType coin, const PublicKey& publicKey, [[maybe_unused]] TWDerivation derivation, [[maybe_unused]] const PrefixVariant& addressPrefix) const {
     return Address(publicKey).string();
-}
-
-Data Entry::addressToData([[maybe_unused]] TWCoinType coin, const std::string& address) const {
-    const auto addr = Address(address);
-    return {addr.bytes.begin(), addr.bytes.end()};
 }
 
 void Entry::sign([[maybe_unused]] TWCoinType coin, const TW::Data& dataIn, TW::Data& dataOut) const {

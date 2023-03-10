@@ -430,6 +430,34 @@
     }
   },
   {
+    "id": "sui",
+    "name": "Sui",
+    "coinId": 784,
+    "symbol": "SUI",
+    "decimals": 9,
+    "blockchain": "Sui",
+    "derivation": [
+      {
+        "path": "m/44'/784'/0'/0'/0'"
+      }
+    ],
+    "curve": "ed25519",
+    "publicKeyType": "ed25519",
+    "explorer": {
+      "url": "https://explorer.sui.io/",
+      "txPath": "/transaction/",
+      "accountPath": "/address/",
+      "sampleTx": "SWRW1RoMHxnD9NeobgBoC4cXGwp2Hc511CnfWUoTBmo",
+      "sampleAccount": "0x62107e1afefccc7b2267ab74e332c146f5c2ca15"
+    },
+    "info": {
+      "url": "https://sui.io/",
+      "source": "https://github.com/MystenLabs/sui",
+      "rpc": "https://fullnode.testnet.sui.io",
+      "documentation": "https://docs.sui.io/"
+    }
+  },
+  {
     "id": "cosmos",
     "name": "Cosmos",
     "displayName": "Cosmos Hub",
@@ -757,6 +785,32 @@
       "source": "https://github.com/eosio/eos",
       "rpc": "",
       "documentation": "https://developers.eos.io/eosio-nodeos/reference"
+    }
+  },
+  {
+    "id": "wax",
+    "name": "WAX",
+    "coinId": 14001,
+    "symbol": "WAXP",
+    "decimals": 4,
+    "blockchain": "EOS",
+    "derivation": [
+      {
+        "path": "m/44'/194'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "explorer": {
+      "url": "https://wax.bloks.io",
+      "txPath": "/transaction/",
+      "accountPath": "/account/"
+    },
+    "info": {
+      "url": "http://wax.io",
+      "source": "https://github.com/worldwide-asset-exchange/wax-blockchain",
+      "rpc": "https://wax.blacklusion.io",
+      "documentation": "https://https://developer.wax.io"
     }
   },
   {
@@ -1351,11 +1405,11 @@
   },
   {
     "id": "elrond",
-    "name": "Elrond",
+    "name": "MultiversX",
     "coinId": 508,
     "symbol": "eGLD",
     "decimals": 18,
-    "blockchain": "ElrondNetwork",
+    "blockchain": "MultiversX",
     "derivation": [
       {
         "path": "m/44'/508'/0'/0'/0'"
@@ -1365,15 +1419,15 @@
     "publicKeyType": "ed25519",
     "hrp": "erd",
     "explorer": {
-      "url": "https://explorer.elrond.com",
+      "url": "https://explorer.multiversx.com",
       "txPath": "/transactions/",
-      "accountPath": "/address/"
+      "accountPath": "/accounts/"
     },
     "info": {
-      "url": "https://elrond.com/",
-      "source": "https://github.com/ElrondNetwork/elrond-go",
-      "rpc": "https://api.elrond.com",
-      "documentation": "https://docs.elrond.com"
+      "url": "https://multiversx.com/",
+      "source": "https://github.com/multiversx/mx-chain-go",
+      "rpc": "https://api.multiversx.com",
+      "documentation": "https://docs.multiversx.com"
     }
   },
   {
@@ -1404,7 +1458,7 @@
       "url": "https://binance.org",
       "source": "https://github.com/binance-chain/node-binary",
       "rpc": "https://dex.binance.org",
-      "documentation": "https://docs.binance.org/api-reference/dex-api/paths.html"
+      "documentation": "https://docs.bnbchain.org/docs/beaconchain/develop/api-reference/dex-api/paths"
     }
   },
   {
@@ -1520,7 +1574,7 @@
   },
   {
     "id": "thundertoken",
-    "name": "Thunder Token",
+    "name": "ThunderCore",
     "coinId": 1001,
     "symbol": "TT",
     "decimals": 18,
@@ -2070,10 +2124,10 @@
     }
   },
   {
-    "id": "zksync",
-    "name": "Zksync",
-    "displayName": "zkSync v2",
-    "coinId": 10000280,
+    "id": "polygonzkevm",
+    "name": "Polygon zkEVM",
+    "displayName": "Polygon zkEVM",
+    "coinId": 10001422,
     "slip44": 60,
     "symbol": "ETH",
     "decimals": 18,
@@ -2085,18 +2139,48 @@
     ],
     "curve": "secp256k1",
     "publicKeyType": "secp256k1Extended",
-    "chainId": "280",
+    "chainId": "1422",
     "addressHasher": "keccak256",
     "explorer": {
-      "url": "https://zksync2-testnet.zkscan.io",
+      "url": "https://explorer.public.zkevm-test.net",
+      "txPath": "/tx/",
+      "accountPath": "/address/"
+    },
+    "info": {
+      "url": "https://www.polygon.technology/",
+      "source": "https://github.com/0xpolygonhermez",
+      "rpc": "https://rpc.public.zkevm-test.net",
+      "documentation": "https://wiki.polygon.technology/docs/zkEVM/introduction/"
+    }
+  },
+  {
+    "id": "zksync",
+    "name": "Zksync",
+    "displayName": "zkSync Era",
+    "coinId": 10000324,
+    "slip44": 60,
+    "symbol": "ETH",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "324",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://explorer.zksync.io",
       "txPath": "/tx/",
       "accountPath": "/address/"
     },
     "info": {
       "url": "https://portal.zksync.io/",
       "source": "https://github.com/matter-labs/zksync",
-      "rpc": "https://zksync2-testnet.zksync.dev",
-      "documentation": "https://v2-docs.zksync.io"
+      "rpc": "https://zksync2-mainnet.zksync.io",
+      "documentation": "https://era.zksync.io/docs"
     }
   },
   {
@@ -2342,6 +2426,38 @@
       "client": "https://github.com/axieinfinity/ronin-smart-contracts",
       "clientPublic": "https://api.roninchain.com/rpc",
       "clientDocs": "https://eth.wiki/json-rpc/API"
+    }
+  },
+  {
+    "id": "secret",
+    "name": "Secret",
+    "displayName": "Secret",
+    "coinId": 529,
+    "symbol": "SCRT",
+    "decimals": 6,
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/529'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "hrp": "secret",
+    "chainId": "secret-4",
+    "addressHasher": "sha256ripemd",
+    "explorer": {
+      "url": "https://mintscan.io/secret",
+      "txPath": "/txs/",
+      "accountPath": "/account/",
+      "sampleTx": "026B4886B1D9CE836A99755DDE99D4F8A7748D27B1CE9D298A763B1CFFF62C00",
+      "sampleAccount": "secret167m3s89ddurjpyr82vsluvvj0t8ylzn95trrqy"
+    },
+    "info": {
+      "url": "https://scrt.network/",
+      "source": "https://github.com/scrtlabs/SecretNetwork",
+      "rpc": "https://scrt-rpc.blockpane.com/",
+      "documentation": "https://docs.scrt.network/"
     }
   },
   {
@@ -2847,6 +2963,95 @@
       "url": "https://hedera.com/",
       "source": "https://github.com/hashgraph",
       "documentation": "https://docs.hedera.com"
+    }
+  },
+  {
+    "id": "agoric",
+    "name": "Agoric",
+    "coinId": 564,
+    "symbol": "BLD",
+    "decimals": 6,
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/564'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "hrp": "agoric",
+    "chainId": "agoric-3",
+    "addressHasher": "sha256ripemd",
+    "explorer": {
+      "url": "https://atomscan.com/agoric",
+      "txPath": "/transactions/",
+      "accountPath": "/accounts/",
+      "sampleTx": "576224B1A0F3D56BA23C5350C2A0E3CEA86F40005B828793E5ACBC2F4813152E",
+      "sampleAccount": "agoric1cqvwa8jr6pmt45jndanc8lqmdsxjkhw0yertc0"
+    },
+    "info": {
+      "url": "https://agoric.com",
+      "source": "https://github.com/Agoric/agoric-sdk",
+      "rpc": "https://agoric-rpc.polkachu.com",
+      "documentation": "https://docs.agoric.com"
+    }
+  },
+  {
+    "id": "nativeinjective",
+    "name": "NativeInjective",
+    "displayName": "Native Injective",
+    "coinId": 10000060,
+    "symbol": "INJ",
+    "decimals": 18,
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "hrp": "inj",
+    "addressHasher": "keccak256",
+    "chainId": "injective-1",
+    "explorer": {
+      "url": "https://www.mintscan.io/injective",
+      "txPath": "/txs/",
+      "accountPath": "/account/",
+      "sampleTx": "C5F6A4FF9DF1AE9FF543D2CEBD8E3E9B04290B2445F9D91D7707EDBF4B7EE16B",
+      "sampleAccount": "inj1xmpkmxr4as00em23tc2zgmuyy2gr4h3wgcl6vd"
+    },
+    "info": {
+      "url": "https://injective.com",
+      "documentation": "https://docs.injective.network"
+    }
+  },
+  {
+    "id": "ton",
+    "name": "TON",
+    "coinId": 607,
+    "symbol": "TON",
+    "decimals": 9,
+    "blockchain": "The Open Network",
+    "derivation": [
+      {
+        "path": "m/44'/607'/0'"
+      }
+    ],
+    "curve": "ed25519",
+    "publicKeyType": "ed25519",
+    "explorer": {
+      "url": "https://tonscan.org",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "fJXfn0EVhV09HFuEgUHu4Cchb24nUQtIMwSzmzk2tLs=",
+      "sampleAccount": "EQCD39VS5jcptHL8vMjEXrzGaRcCVYto7HUn4bpAOg8xqB2N"
+    },
+    "info": {
+      "url": "https://ton.org",
+      "source": "https://github.com/ton-blockchain",
+      "rpc": "https://toncenter.com/api/v2/jsonRPC",
+      "documentation": "https://ton.org/docs"
     }
   }
 ]
