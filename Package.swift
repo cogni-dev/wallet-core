@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WalletCore",
-            url: "https://github.com/trustwallet/wallet-core/releases/download/4.0.38/WalletCore.xcframework.zip",
-            checksum: "3aafb8d602b30626ac5c603b5f6a0e4a6d3067d7b0013e350b712715c58ee925"
+            url: "https://github.com/trustwallet/wallet-core/releases/download/4.0.40/WalletCore.xcframework.zip",
+            checksum: "51888a2d2e06680ace5c25834913eed30851c1baf71dabbc81ed4270"
         )
     ]
 )
