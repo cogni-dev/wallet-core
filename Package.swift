@@ -5,14 +5,14 @@ let package = Package(
     name: "WalletCore",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "WalletCore", targets: ["WalletCore"]),
+        .library(name: "WalletCore", targets: ["WalletCore"])
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "WalletCore",
-            url: "https://github.com/trustwallet/wallet-core/releases/download/4.0.40/WalletCore.xcframework.zip",
-            checksum: "449604b386cc18d953ab90554fb7c2b2e1a22e493a9a9e6f5922dfdda174391a"
+            url: "https://github.com/trustwallet/wallet-core/releases/download/4.1.7/WalletCore.xcframework.zip",
+            checksum: "605380c1eb6b71042b93965f5b626fb55a69f6a7b6e4a43d4e0fbcfebe92d487"
         )
     ]
 )
